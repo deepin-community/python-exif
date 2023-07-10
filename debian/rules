@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+#export DH_VERBOSE=1
+export PYBUILD_NAME=exifread
 
 %:
-	dh $@
+	dh $@ --buildsystem=pybuild --with python3
+
+override_dh_install:
+	dh_install
+	rm $(CURDIR)/debian/python*-exifread/usr/bin/EXIF.py

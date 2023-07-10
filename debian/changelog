@@ -1,5 +1,166 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-exif (3.0.0-1) unstable; urgency=medium
 
-  * Initial release
+  [ Diego M. Rodriguez ]
+  * d/test: mark test as superficial (Closes: #974474)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ TANIGUCHI Takaki ]
+  * New upstream version 3.0.0
+  * Update standards version to 4.6.1, no changes needed.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 04 Jul 2022 10:26:29 +0900
+
+python-exif (2.3.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ TANIGUCHI Takaki ]
+  * New upstream version 2.3.2
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Sat, 07 Nov 2020 12:05:20 +0900
+
+python-exif (2.3.1-1) unstable; urgency=medium
+
+  * New upstream version 2.3.1
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Sun, 06 Sep 2020 11:23:01 +0900
+
+python-exif (2.2.0-5) unstable; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Bump Standards-Version to 4.5.0
+  * d/tests/control: Adjust binary package name and import name.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 28 Jan 2020 11:47:31 +0900
+
+python-exif (2.2.0-4) unstable; urgency=medium
+
+  * Rename binary package (Closes: #942287)
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 14 Oct 2019 23:50:34 +0900
+
+python-exif (2.2.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Drop python2 support; Closes: #937741
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 13 Oct 2019 19:35:20 -0400
+
+python-exif (2.2.0-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ TANIGUCHI Takaki ]
+  * Set upstream metadata fields: Repository.
+  * Bump Standards-Version to 4.4.1
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 30 Sep 2019 17:30:04 +0900
+
+python-exif (2.2.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Deprecating priority extra as per policy 4.0.1
+  * Convert git repository from git-dpm to gbp layout
+
+  [ TANIGUCHI Takaki ]
+  * Bump debhelper from deprecated 7 to 10.
+  * New upstream version 2.2.0
+  * debian/compat: Bumpt to 12
+  * Bump Standards-Version
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 29 Jul 2019 10:58:41 +0900
+
+python-exif (2.1.2-1) unstable; urgency=medium
+
+  [ Stefano Rivera ]
+  * git-dpm tag config
+
+  [ W. Martin Borgert ]
+  * Fix Vcs field
+
+  [ TANIGUCHI Takaki ]
+  * Imported Upstream version 2.1.2
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Thu, 26 Nov 2015 10:37:08 +0900
+
+python-exif (2.1.1-2) unstable; urgency=low
+
+  * Build-depend on python3-setuptools (Closes: #795129)
+
+ -- W. Martin Borgert <debacle@debian.org>  Tue, 11 Aug 2015 22:09:27 +0000
+
+python-exif (2.1.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Re-enable Python 3 support
+  * Bump standards version, no changes
+
+ -- W. Martin Borgert <debacle@debian.org>  Sat, 01 Aug 2015 21:41:47 +0000
+
+python-exif (1.4.2-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Logan Rosen ]
+  * debian/control: Build-depend on dh-python to fix FTBFS. (Closes: #779093)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 01 Mar 2015 19:05:43 +0100
+
+python-exif (1.4.2-2) unstable; urgency=low
+
+  * Drop buggy Python 3 support for Jessie (Closes: #775609).
+
+ -- W. Martin Borgert <debacle@debian.org>  Sun, 25 Jan 2015 22:33:19 +0000
+
+python-exif (1.4.2-1) unstable; urgency=low
+
+  * New upstream release (Closes: #763347), new upstream homepage
+  * Upstream also closes: #727098
+  * Bump Standards-Version to 3.9.5 (with no changes).
+  * Add Python 3 variant
+  * Moved packaging to git
+
+ -- W. Martin Borgert <debacle@debian.org>  Tue, 07 Oct 2014 21:56:02 +0000
+
+python-exif (1.1.0-1) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Add Vcs-* fields.
+
+  [ TANIGUCHI Takaki ]
+  * New upstream release
+  * Bump Standards-Version to 3.9.4 (with no changes).
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 07 May 2013 10:26:21 +0900
+
+python-exif (1.0.8-3) unstable; urgency=low
+
+  * debian/control: remove python-support from BD.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 23 May 2011 12:52:01 +0900
+
+python-exif (1.0.8-2) unstable; urgency=low
+
+  * Switch to dh_python2.
+  * Bump Standards-Version to 3.9.2 (with no changes).
+  * debian/install: Added, instead of debian/rules target.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 23 May 2011 11:40:44 +0900
+
+python-exif (1.0.8-1) unstable; urgency=low
+
+  * Initial release (Closes: #610234)
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Sun, 16 Jan 2011 22:36:00 +0900
