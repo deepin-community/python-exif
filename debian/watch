@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/exif-py-$1\.tar\.gz/ \
+  https://github.com/ianare/exif-py/tags .*/v?(\d\S*)\.tar\.gz

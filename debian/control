@@ -1,15 +1,32 @@
-Source: template-repository
-Section: unknown
+Source: python-exif
+Section: python
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: TANIGUCHI Takaki <takaki@debian.org>, W. Martin Borgert <debacle@debian.org>
+Build-Depends: python3-setuptools, debhelper-compat (= 13), dh-python, python3-all
+Standards-Version: 4.6.1
+Homepage: https://github.com/ianare/exif-py
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-exif.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-exif
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: python3-exif
+Architecture: all
+Depends: python3-exifread, ${misc:Depends}
+Section: oldlibs
+Description: Transition package for python3-exifread
+ This is a Python library to extract Exif information from digital camera
+ image files. It contains the EXIF.py script and the exifread library.
+ .
+ This is a dummy package.
+
+Package: python3-exifread
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Provides: ${python3:Provides}
+Breaks: python3-exif (<< 2.2.0-4~)
+Replaces: python3-exif (<< 2.2.0-4~)
+Description: Python library to extract Exif data from TIFF and JPEG files
+ This is a Python library to extract Exif information from digital camera
+ image files. It contains the EXIF.py script and the exifread library.
+ .
+ This package provides the Python 3.x module.
